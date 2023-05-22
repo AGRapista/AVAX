@@ -23,14 +23,14 @@ in Snowtrace and that a proper MetaMask wallet has been setup.
 
 ## Functions
 The following would be a breakdown of the functions within the Smart Contract 
-``` mint() ``` - Makes use of the ERC20 standard function _mint to mint the provided amount of tokens to the provided address. Can only be called by Smart Contract owner.
-``` mintShopItem() ``` - Creates a new shop item and records it to the local smart contract state data. Can only be called by Smart Contract owner.
-``` checkBalance() ``` - Retrieves the balance of the caller
-``` transferTokens() ``` - Facilitates exchange of provided token amount between the function caller and the specified address.
-``` burnToken() ``` - Makes use of the ERC20 function _burn to destroy an amount of tokens from the caller effectively destroying the tokens and removing them from circulation.
-``` redeemShopItem() ``` - Allows the caller to redeem and be in possession of a shop item. Validates if the caller has sufficient funds to make the purchase.
-``` viewShop() ``` - Lists down available options from the shop
-``` viewOwner ``` - Retrieves the owner address of the shop item
+``` mint() ``` - Makes use of the ERC20 standard function _mint to mint the provided amount of tokens to the provided address. Can only be called by Smart Contract owner.     
+``` mintShopItem() ``` - Creates a new shop item and records it to the local smart contract state data. Can only be called by Smart Contract owner.     
+``` checkBalance() ``` - Retrieves the balance of the caller.     
+``` transferTokens() ``` - Facilitates exchange of provided token amount between the function caller and the specified address.     
+``` burnToken() ``` - Makes use of the ERC20 function _burn to destroy an amount of tokens from the caller effectively destroying the tokens and removing them from circulation.     
+``` redeemShopItem() ``` - Allows the caller to redeem and be in possession of a shop item. Validates if the caller has sufficient funds to make the purchase.     
+``` viewShop() ``` - Lists down available options from the shop.     
+``` viewOwner ``` - Retrieves the owner address of the shop item.     
 
 ## Author
 AGRAPISTA
