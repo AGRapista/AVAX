@@ -10,7 +10,8 @@ The project demonstrates the following elements:
 + Basic smart contract state data manipulation 
 
 ## Deployment
-Please refer to the GUIDE.md in this directory for details on how to deploy this project. Once setup run the following commands:
+Please refer to the GUIDE.md in this directory for details on how to deploy this project. Once setup, run the following commands:     
+      
 ``` npx hardhat run scripts/deploy.js --network fuji ``` - This would output an address which should be used the proceeding command       
 ``` npx hardhat verify <Contract Address> --network fuji ``` 
 
@@ -25,6 +26,7 @@ in Snowtrace and that a proper MetaMask wallet has been setup.
 
 ## Functions
 The following would be a breakdown of the functions within the Smart Contract 
+        
 ``` mint() ``` - Makes use of the ERC20 standard function _mint to mint the provided amount of tokens to the provided address. Can only be called by Smart Contract owner.     
 ``` mintShopItem() ``` - Creates a new shop item and records it to the local smart contract state data. Can only be called by Smart Contract owner.     
 ``` checkBalance() ``` - Retrieves the balance of the caller.     
