@@ -9,10 +9,10 @@ The project demonstrates the following elements:
 + Minting, Transfer, Burning of a custom token using the ERC20 standard
 + Basic smart contract state data manipulation 
 
-### Deployment
+## Deployment
 Please refer to the GUIDE.md in this directory for details on how to deploy this project
 
-### Remix Deployment
+## Remix Deployment
 Please ensure first that the contract has already been deployed at the Fuji network and is verified
 in Snowtrace and that a proper MetaMask wallet has been setup.
 
@@ -21,5 +21,16 @@ in Snowtrace and that a proper MetaMask wallet has been setup.
 3. Navigate towards the field beside the "At Address" button and place the Contract Address
 4. Click the "At Address" button and the contract should load which would allow the calling of the Smart Contract functions
 
-### Functions
+## Functions
 The following would be a breakdown of the functions within the Smart Contract 
+``` mint() ``` - Makes use of the ERC20 standard function _mint to mint the provided amount of tokens to the provided address. Can only be called by Smart Contract owner.
+``` mintShopItem() ``` - Creates a new shop item and records it to the local smart contract state data. Can only be called by Smart Contract owner.
+``` checkBalance() ``` - Retrieves the balance of the caller
+``` transferTokens() ``` - Facilitates exchange of provided token amount between the function caller and the specified address.
+``` burnToken() ``` - Makes use of the ERC20 function _burn to destroy an amount of tokens from the caller effectively destroying the tokens and removing them from circulation.
+``` redeemShopItem() ``` - Allows the caller to redeem and be in possession of a shop item. Validates if the caller has sufficient funds to make the purchase.
+``` viewShop() ``` - Lists down available options from the shop
+``` viewOwner ``` - Retrieves the owner address of the shop item
+
+## Author
+AGRAPISTA
