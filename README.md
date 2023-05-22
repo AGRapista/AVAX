@@ -10,7 +10,9 @@ The project demonstrates the following elements:
 + Basic smart contract state data manipulation 
 
 ## Deployment
-Please refer to the GUIDE.md in this directory for details on how to deploy this project
+Please refer to the GUIDE.md in this directory for details on how to deploy this project. Once setup run the following commands:
+``` npx hardhat run scripts/deploy.js --network fuji ``` - This would output an address which should be used the proceeding command       
+``` npx hardhat verify <Contract Address> --network fuji ``` 
 
 ## Remix Deployment
 Please ensure first that the contract has already been deployed at the Fuji network and is verified
